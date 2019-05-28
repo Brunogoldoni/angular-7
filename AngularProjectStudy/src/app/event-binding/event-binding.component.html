@@ -1,0 +1,13 @@
+<section>
+  <button mat-button color="primary" (click)="save()">Salvar</button>
+  <button mat-button color="warn" (click)="inc()"> {{ buttonName }} </button>
+</section>
+
+<section>
+  <button mat-button color="primary" [disabled]=!btnEnable>Salvar</button>
+  <button mat-button color="warn" [disabled]=!btnEnable> {{ buttonName }} </button>
+
+  <button mat-button color="warn" (click)="disable()" [disabled]=!btnEnable> Desabilitar </button>
+  <mat-spinner color="primary" [mode]="spinnerMode" value="0">
+  </mat-spinner>
+</section>
