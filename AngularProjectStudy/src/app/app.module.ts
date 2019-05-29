@@ -17,6 +17,7 @@ import {
   MatRadioModule,
   MatSelectModule
 } from "@angular/material";
+import { DirectivesNgClassComponent } from './directives-ng-class/directives-ng-class.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {
     StringInterpolationComponent,
     EventBindingComponent,
     TwoWayDataBindingComponent,
-    DirectivesNgStyleComponent
+    DirectivesNgStyleComponent,
+    DirectivesNgClassComponent
   ],
   imports: [
     BrowserModule,
