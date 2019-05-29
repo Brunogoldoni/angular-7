@@ -1,26 +1,30 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {StringInterpolationComponent} from './string-interpolation/string-interpolation.component';
-import {MatCardModule} from '@angular/material/card';
-import {MatButtonModule} from '@angular/material/button';
-import {MatInputModule} from '@angular/material/input';
-import {MatSelectModule} from '@angular/material/select';
+import {BrowserModule} from '@angular/platform-browser';
+import {DirectivesNgStyleComponent} from './directives-ng-style/directives-ng-style.component';
 import {EventBindingComponent} from './event-binding/event-binding.component';
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {FormsModule} from '@angular/forms';
+import {MatButtonModule} from '@angular/material/button';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatInputModule} from '@angular/material/input';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { NgModule } from '@angular/core';
+import {StringInterpolationComponent} from './string-interpolation/string-interpolation.component';
 import {TwoWayDataBindingComponent} from './two-way-data-binding/two-way-data-binding.component';
-import {FormsModule} from '@angular/forms';
+import {
+  MatCardModule,
+  MatRadioModule,
+  MatSelectModule
+} from "@angular/material";
 
 @NgModule({
   declarations: [
     AppComponent,
     StringInterpolationComponent,
     EventBindingComponent,
-    TwoWayDataBindingComponent
+    TwoWayDataBindingComponent,
+    DirectivesNgStyleComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +36,8 @@ import {FormsModule} from '@angular/forms';
     MatProgressSpinnerModule,
     MatCheckboxModule,
     MatDividerModule,
-    FormsModule
+    FormsModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]
