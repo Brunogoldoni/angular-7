@@ -12,12 +12,15 @@ import {EventBindingComponent} from './event-binding/event-binding.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatDividerModule} from '@angular/material/divider';
+import {TwoWayDataBindingComponent} from './two-way-data-binding/two-way-data-binding.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     StringInterpolationComponent,
-    EventBindingComponent
+    EventBindingComponent,
+    TwoWayDataBindingComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,8 @@ import {MatDividerModule} from '@angular/material/divider';
     MatSelectModule,
     MatProgressSpinnerModule,
     MatCheckboxModule,
-    MatDividerModule
+    MatDividerModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

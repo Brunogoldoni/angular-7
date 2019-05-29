@@ -1,0 +1,26 @@
+<section>
+  <mat-card class="card">
+    <mat-card-content>
+      <form action="">
+        <mat-form-field class="full-width">
+          <input matInput placeholder="Nome:" [(ngModel)]="client.firstName" name="firstname">
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <input matInput placeholder="Sobrenome:" [(ngModel)]="client.lastName" name="lastname">
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <input matInput placeholder="Endereço:" [(ngModel)]="client.address" name="address">
+        </mat-form-field>
+        <mat-form-field class="full-width">
+          <input matInput placeholder="Idade:" [(ngModel)]="client.age" name="age">
+        </mat-form-field>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <p>Nome: {{ client.firstName }}</p>
+      <p>Sobrenome: {{ client.lastName }}</p>
+      <p>Endereço: {{ client.address}}</p>
+      <p>Idade: {{ client.age}}</p>
+    </mat-card-actions>
+  </mat-card>
+</section>
