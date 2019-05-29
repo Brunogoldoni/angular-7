@@ -5,19 +5,20 @@ import {DirectivesNgStyleComponent} from './directives-ng-style/directives-ng-st
 import {EventBindingComponent} from './event-binding/event-binding.component';
 import {FormsModule} from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
-import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatDividerModule} from '@angular/material/divider';
-import {MatInputModule} from '@angular/material/input';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
-import { NgModule } from '@angular/core';
+import {NgModule} from '@angular/core';
 import {StringInterpolationComponent} from './string-interpolation/string-interpolation.component';
 import {TwoWayDataBindingComponent} from './two-way-data-binding/two-way-data-binding.component';
 import {
   MatCardModule,
+  MatCheckboxModule,
+  MatInputModule,
   MatRadioModule,
   MatSelectModule
 } from "@angular/material";
 import { DirectivesNgClassComponent } from './directives-ng-class/directives-ng-class.component';
+import { DirectivesNgIfComponent } from './directives-ng-if/directives-ng-if.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { DirectivesNgClassComponent } from './directives-ng-class/directives-ng-
     EventBindingComponent,
     TwoWayDataBindingComponent,
     DirectivesNgStyleComponent,
-    DirectivesNgClassComponent
+    DirectivesNgClassComponent,
+    DirectivesNgIfComponent
   ],
   imports: [
     BrowserModule,
