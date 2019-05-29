@@ -16,6 +16,7 @@ export class EventBindingComponent implements OnInit {
   btnEnable = true;
   selectDisabled = false;
   selectedOption = 1;
+  inputName = "Bruno Wick";
 
   ngOnInit() {
   }
@@ -31,11 +32,11 @@ export class EventBindingComponent implements OnInit {
     setTimeout(() => {
       this.btnEnable = true;
       this.spinnerMode = "determinate";
-    } , 3000);
+    }, 3000);
   }
 
   cbChange(event) {
-    console.log(event.checked);
+    // console.log(event.checked);
     this.selectDisabled = event.checked;
   }
 
@@ -43,4 +44,9 @@ export class EventBindingComponent implements OnInit {
     console.log(event);
     this.selectedOption = event.value;
   }
+
+  // inputEvent(evnet) {
+  //   console.log(event.target.value);
+  //   console.log(this.inputName)
+  // }
 }
