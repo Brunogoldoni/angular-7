@@ -19,6 +19,7 @@ import {
 } from "@angular/material";
 import { DirectivesNgClassComponent } from './directives-ng-class/directives-ng-class.component';
 import { DirectivesNgIfComponent } from './directives-ng-if/directives-ng-if.component';
+import { SubNgIfComponent } from './directives-ng-if/sub-ng-if/sub-ng-if.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { DirectivesNgIfComponent } from './directives-ng-if/directives-ng-if.com
     TwoWayDataBindingComponent,
     DirectivesNgStyleComponent,
     DirectivesNgClassComponent,
-    DirectivesNgIfComponent
+    DirectivesNgIfComponent,
+    SubNgIfComponent
   ],
   imports: [
     BrowserModule,
