@@ -12,6 +12,7 @@ import {
   MatIconModule,
   MatInputModule,
   MatListModule,
+  MatProgressBarModule,
   MatRadioModule,
   MatSelectModule
 } from "@angular/material";
@@ -24,6 +25,7 @@ import { NgModule } from '@angular/core';
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { StringInterpolationComponent } from './string-interpolation/string-interpolation.component';
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
+import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 
 @NgModule({
   declarations: [
@@ -37,10 +39,12 @@ import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-
     StringInterpolationComponent,
     SubNgIfComponent,
     TwoWayDataBindingComponent,
+    NgSwitchComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
     MatCardModule,
     MatButtonModule,
     MatInputModule,
@@ -48,10 +52,10 @@ import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-
     MatProgressSpinnerModule,
     MatCheckboxModule,
     MatDividerModule,
-    FormsModule,
     MatRadioModule,
     MatListModule,
-    MatIconModule
+    MatIconModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
