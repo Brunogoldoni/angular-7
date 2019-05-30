@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DirectivesNgIfComponent } from './directives-ng-if.component';
+import { NgIfComponent } from './ng-if.component';
 
-describe('DirectivesNgIfComponent', () => {
-  let component: DirectivesNgIfComponent;
-  let fixture: ComponentFixture<DirectivesNgIfComponent>;
+describe('NgIfComponent', () => {
+  let component: NgIfComponent;
+  let fixture: ComponentFixture<NgIfComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DirectivesNgIfComponent ]
+      declarations: [ NgIfComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DirectivesNgIfComponent);
+    fixture = TestBed.createComponent(NgIfComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
