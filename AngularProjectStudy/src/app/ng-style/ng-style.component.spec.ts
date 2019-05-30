@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DirectivesNgStyleComponent } from './directives-ng-style.component';
+import { NgStyleComponent } from './ng-style.component';
 
-describe('DirectivesNgStyleComponent', () => {
-  let component: DirectivesNgStyleComponent;
-  let fixture: ComponentFixture<DirectivesNgStyleComponent>;
+describe('NgStyleComponent', () => {
+  let component: NgStyleComponent;
+  let fixture: ComponentFixture<NgStyleComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DirectivesNgStyleComponent ]
+      declarations: [ NgStyleComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DirectivesNgStyleComponent);
+    fixture = TestBed.createComponent(NgStyleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

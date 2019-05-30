@@ -1,7 +1,7 @@
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {BrowserModule} from '@angular/platform-browser';
-import {DirectivesNgStyleComponent} from './directives-ng-style/directives-ng-style.component';
+import {NgStyleComponent} from './ng-style/ng-style.component';
 import {EventBindingComponent} from './event-binding/event-binding.component';
 import {FormsModule} from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
@@ -31,12 +31,12 @@ import { NgForFormComponent } from './ng-for-form/ng-for-form.component';
     StringInterpolationComponent,
     EventBindingComponent,
     TwoWayDataBindingComponent,
-    DirectivesNgStyleComponent,
-    NgClassComponent,
     DirectivesNgIfComponent,
     SubNgIfComponent,
+    NgClassComponent,
     NgForComponent,
-    NgForFormComponent
+    NgStyleComponent,
+    NgForFormComponent,
   ],
   imports: [
     BrowserModule,
