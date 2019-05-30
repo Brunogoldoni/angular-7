@@ -5,7 +5,6 @@ import {DirectivesNgStyleComponent} from './directives-ng-style/directives-ng-st
 import {EventBindingComponent} from './event-binding/event-binding.component';
 import {FormsModule} from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
-import {MatDividerModule} from '@angular/material/divider';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {NgModule} from '@angular/core';
 import {StringInterpolationComponent} from './string-interpolation/string-interpolation.component';
@@ -13,13 +12,17 @@ import {TwoWayDataBindingComponent} from './two-way-data-binding/two-way-data-bi
 import {
   MatCardModule,
   MatCheckboxModule,
+  MatDividerModule,
+  MatIconModule,
   MatInputModule,
+  MatListModule,
   MatRadioModule,
   MatSelectModule
 } from "@angular/material";
 import { DirectivesNgClassComponent } from './directives-ng-class/directives-ng-class.component';
 import { DirectivesNgIfComponent } from './directives-ng-if/directives-ng-if.component';
 import { SubNgIfComponent } from './directives-ng-if/sub-ng-if/sub-ng-if.component';
+import { NgForComponent } from './ng-for/ng-for.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,8 @@ import { SubNgIfComponent } from './directives-ng-if/sub-ng-if/sub-ng-if.compone
     DirectivesNgStyleComponent,
     DirectivesNgClassComponent,
     DirectivesNgIfComponent,
-    SubNgIfComponent
+    SubNgIfComponent,
+    NgForComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +47,9 @@ import { SubNgIfComponent } from './directives-ng-if/sub-ng-if/sub-ng-if.compone
     MatCheckboxModule,
     MatDividerModule,
     FormsModule,
-    MatRadioModule
+    MatRadioModule,
+    MatListModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
