@@ -19,7 +19,7 @@ import {
   MatRadioModule,
   MatSelectModule
 } from "@angular/material";
-import { DirectivesNgClassComponent } from './directives-ng-class/directives-ng-class.component';
+import { NgClassComponent } from './ng-class/ng-class.component';
 import { DirectivesNgIfComponent } from './directives-ng-if/directives-ng-if.component';
 import { SubNgIfComponent } from './directives-ng-if/sub-ng-if/sub-ng-if.component';
 import { NgForComponent } from './ng-for/ng-for.component';
@@ -32,7 +32,7 @@ import { NgForFormComponent } from './ng-for-form/ng-for-form.component';
     EventBindingComponent,
     TwoWayDataBindingComponent,
     DirectivesNgStyleComponent,
-    DirectivesNgClassComponent,
+    NgClassComponent,
     DirectivesNgIfComponent,
     SubNgIfComponent,
     NgForComponent,
