@@ -27,6 +27,7 @@ import { StringInterpolationComponent } from './string-interpolation/string-inte
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgTemplateComponent } from './ng-template/ng-template.component';
+import { NgContainerComponent } from './ng-container/ng-container.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { NgTemplateComponent } from './ng-template/ng-template.component';
     TwoWayDataBindingComponent,
     NgSwitchComponent,
     NgTemplateComponent,
+    NgContainerComponent,
   ],
   imports: [
     BrowserModule,

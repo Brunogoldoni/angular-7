@@ -1,0 +1,46 @@
+mat-card {
+  margin: 20px;
+
+  mat-card-content {
+    ul {
+      margin: 10px;
+
+      li {
+        color: #5f727f;
+        font-size: 16px;
+        font-weight: 500;
+        padding-top: 10px;
+      }
+    }
+
+    mat-list {
+      .title {
+        color: #f46026;
+        font-size: 30px;
+        font-weight: 500;
+        padding-top: 10px;
+      }
+
+      .ifolder {
+        color: #71ade5;
+      }
+
+      .users {
+        color: #5f727f;
+        padding: 2px;
+      }
+      .name {
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .role {
+        font-size: 14px;
+        font-weight: 400;
+      }
+      .lastlogin {
+        font-size: 12px;
+        font-weight: 400;
+      }
+    }
+  }
+}
