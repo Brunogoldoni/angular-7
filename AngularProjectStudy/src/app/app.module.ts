@@ -28,6 +28,7 @@ import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgTemplateComponent } from './ng-template/ng-template.component';
 import { NgContainerComponent } from './ng-container/ng-container.component';
+import { NgContentComponent } from './ng-content/ng-content.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { NgContainerComponent } from './ng-container/ng-container.component';
     NgSwitchComponent,
     NgTemplateComponent,
     NgContainerComponent,
+    NgContentComponent,
   ],
   imports: [
     BrowserModule,
