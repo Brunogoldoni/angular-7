@@ -1,0 +1,16 @@
+mat-card {
+  margin: 20px;
+
+  mat-card-content {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+
+    p {
+      color: #5f727f;
+      font-size: 16px;
+      font-weight: 400;
+      margin: 0;
+    }
+  }
+}
