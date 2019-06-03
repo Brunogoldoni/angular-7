@@ -1,0 +1,33 @@
+.main-container {
+  background-image: url('../assets/images/background-admin-short-opacity.jpg');
+  background-position: center right;
+  background-size: cover;
+  margin-left: 235px;
+  min-height: 100vh;
+  overflow: hidden;
+  padding-top: 70px;
+  position: relative;
+}
+
+.main-content {
+  margin-top: 40px;
+  padding: 0 40px 20px;
+
+  .wrapper-header {
+    display: flex;
+    margin-bottom: 30px;
+
+    .title-page {
+      color: map-get($color, 'color-black');
+      font-size: 28px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.content {
+  background-color: map-get($color, 'color-white');
+  box-shadow: map-get($box-shadow , 'secondary');
+  min-height: .1rem;
+  width: 100%;
+}
