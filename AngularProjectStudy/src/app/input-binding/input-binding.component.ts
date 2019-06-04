@@ -1,3 +1,4 @@
+import { Client } from './client.model';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
