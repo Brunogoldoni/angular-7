@@ -30,6 +30,7 @@ import { NgTemplateComponent } from './ng-template/ng-template.component';
 import { NgContainerComponent } from './ng-container/ng-container.component';
 import { NgContentComponent } from './ng-content/ng-content.component';
 import { InputBindingComponent } from './input-binding/input-binding.component';
+import { ClientComponent } from './input-binding/client/client.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { InputBindingComponent } from './input-binding/input-binding.component';
     NgContainerComponent,
     NgContentComponent,
     InputBindingComponent,
+    ClientComponent,
   ],
   imports: [
     BrowserModule,

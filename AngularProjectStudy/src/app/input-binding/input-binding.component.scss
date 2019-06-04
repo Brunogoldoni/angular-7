@@ -1,7 +1,7 @@
 mat-card {
   margin: 20px;
 
-  mat-card-content {
+  .card-content {
     align-items: center;
     display: flex;
     justify-content: space-around;
@@ -9,8 +9,26 @@ mat-card {
     p {
       color: #5f727f;
       font-size: 16px;
-      font-weight: 400;
+      font-weight: 500;
       margin: 0;
+    }
+  }
+
+  .title {
+    color: #f46026;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  mat-card-content {
+    .description {
+      color: #5f727f;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 0 20px;
+      margin: 0px;
     }
   }
 }
