@@ -8,14 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class EventComponent implements OnInit {
 
   value: number = 0;
-  title = "My title";
+  title = "InputBinding";
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  incBy(n: number) {
-    this.value += n;
+  incBy(event) {
+    // console.log(event);
+    this.value += event;
   }
 }

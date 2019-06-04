@@ -2,13 +2,9 @@
   <mat-card>
     <mat-card-content class="d-flex">
       <section class="wp-content d-flex column col-md-6">
-        <h3 class="title">Value: {{ value }}</h3>
-        <app-child-item
-          [title]="title"
-          (plusOne)="incBy(1)"
-          (plusTwo)="incBy(2)"
-          (minusOne)="incBy(-1)"
-          (minusTwo)="incBy(-2)">
+        <h3 class="title">{{ title }}</h3>
+        <h3 class="output-title">Value: {{ value }}</h3>
+        <app-child-item [title]="title" (inc)="incBy( $event )">
         </app-child-item>
       </section>
     </mat-card-content>
