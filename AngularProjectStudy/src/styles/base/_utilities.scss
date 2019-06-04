@@ -2,3 +2,15 @@
   display: flex;
   justify-content: center;
 }
+
+.around {
+  justify-content: space-around;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.column {
+  flex-direction: column;
+}
