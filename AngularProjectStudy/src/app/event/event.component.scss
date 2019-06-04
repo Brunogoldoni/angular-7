@@ -1,0 +1,19 @@
+section {
+  mat-card {
+    margin: 20px;
+
+    mat-card-content {
+      .wp-content {
+        text-align: center;
+      }
+
+      .title {
+        color: #f46026;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        padding: 20px;
+      }
+    }
+  }
+}
