@@ -1,17 +1,19 @@
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
-import { ClientComponent } from './input-binding/client/client.component';
 import { ChildItemComponent } from './event/child-item/child-item.component';
+import { ClientComponent } from './input-binding/client/client.component';
+import { ClientsComponent } from './clients/clients.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { EventComponent } from './event/event.component';
 import { FormsModule } from '@angular/forms';
 import { InputBindingComponent } from './input-binding/input-binding.component';
 import {
+  MatButtonModule,
   MatCardModule,
   MatCheckboxModule,
-  MatButtonModule,
   MatDividerModule,
+  MatFormFieldModule,
   MatIconModule,
   MatInputModule,
   MatListModule,
@@ -33,11 +35,13 @@ import { NgTemplateComponent } from './ng-template/ng-template.component';
 import { StringInterpolationComponent } from './string-interpolation/string-interpolation.component';
 import { SubNgIfComponent } from './ng-if/sub-ng-if/sub-ng-if.component';
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
+import { ItemClientComponent } from './clients/item-client/item-client.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ClientComponent,
+    ClientsComponent,
     ChildItemComponent,
     EventComponent,
     EventBindingComponent,
@@ -54,23 +58,26 @@ import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-
     StringInterpolationComponent,
     SubNgIfComponent,
     TwoWayDataBindingComponent,
+    ItemClientComponent,
 
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
-    MatCardModule,
     MatButtonModule,
-    MatInputModule,
-    MatSelectModule,
-    MatProgressSpinnerModule,
+    MatCardModule,
     MatCheckboxModule,
     MatDividerModule,
-    MatRadioModule,
-    MatListModule,
+    MatFormFieldModule,
+    MatInputModule,
     MatIconModule,
-    MatProgressBarModule
+    MatListModule,
+    MatProgressBarModule,
+    MatProgressSpinnerModule,
+    MatRadioModule,
+    MatSelectModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,20 @@
+mat-card {
+  margin: 20px;
+
+  .form-field {
+    padding-right: 10px;
+  }
+
+  .wp-section {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+
+    .description {
+      color: #5f727f;
+      font-size: 16px;
+      font-weight: 400;
+      margin-right: 10px;
+    }
+  }
+}
