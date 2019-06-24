@@ -36,6 +36,8 @@ import { StringInterpolationComponent } from './string-interpolation/string-inte
 import { SubNgIfComponent } from './ng-if/sub-ng-if/sub-ng-if.component';
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
 import { ItemClientComponent } from './clients/item-client/item-client.component';
+import { ParentChildComponent } from './parent-child/parent-child.component';
+import { TimerComponent } from './parent-child/timer/timer.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +61,8 @@ import { ItemClientComponent } from './clients/item-client/item-client.component
     SubNgIfComponent,
     TwoWayDataBindingComponent,
     ItemClientComponent,
+    ParentChildComponent,
+    TimerComponent,
 
   ],
   imports: [

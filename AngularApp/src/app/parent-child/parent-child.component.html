@@ -1,0 +1,7 @@
+<app-timer #stopwatch></app-timer>
+
+<div class="d-flex around">
+  <button mat-button color="primary" class="btn-style" (click)="stopwatch.start()">Start</button>
+  <button mat-button color="accent" class="btn-style" (click)="stopwatch.stop()">Stop</button>
+  <button mat-button color="warn" class="btn-style" (click)="stopwatch.clear()">Clear</button>
+</div>
