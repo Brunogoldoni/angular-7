@@ -8,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientsComponent implements OnInit {
 
-  name: string;
   age: number;
+  food: string;
+  name: string;
 
   clients: Client[] = [];
 
@@ -19,11 +20,12 @@ export class ClientsComponent implements OnInit {
   }
 
   save() {
-    this.clients.push (
-      { name: this.name, age: this.age }
+    this.clients.push(
+      { name: this.name, food: this.food, age: this.age }
     );
-    this.name = "";
     this.age = 0;
+    this.food = null;
+    this.name = null;
   }
 
   deleteClient(i) {
@@ -31,7 +33,8 @@ export class ClientsComponent implements OnInit {
   }
 
   updateClient(c: Client, i) {
-    this.clients[i].name = c.name;
     this.clients[i].age = c.age;
+    this.clients[i].name = c.name;
+    this.clients[i].food = c.food;
   }
 }

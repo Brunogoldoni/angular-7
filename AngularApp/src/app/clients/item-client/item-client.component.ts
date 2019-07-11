@@ -12,9 +12,10 @@ export class ItemClientComponent implements OnInit {
   @Output() updateClient = new EventEmitter<Client>();
   @Output() removeClient = new EventEmitter<any>();
 
-  onEdit: boolean = false;
-  name: string;
   age: number;
+  food: string;
+  name: string;
+  onEdit = false;
 
   constructor() { }
 
@@ -34,7 +35,7 @@ export class ItemClientComponent implements OnInit {
   save() {
     this.onEdit = false;
     this.updateClient.emit(
-      {name: this.name , age: this.age}
+      {name: this.name, food: this.food, age: this.age}
     );
   }
 }

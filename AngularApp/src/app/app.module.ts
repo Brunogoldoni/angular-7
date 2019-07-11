@@ -8,20 +8,7 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { EventComponent } from './event/event.component';
 import { FormsModule } from '@angular/forms';
 import { InputBindingComponent } from './input-binding/input-binding.component';
-import {
-  MatButtonModule,
-  MatCardModule,
-  MatCheckboxModule,
-  MatDividerModule,
-  MatFormFieldModule,
-  MatIconModule,
-  MatInputModule,
-  MatListModule,
-  MatProgressBarModule,
-  MatProgressSpinnerModule,
-  MatRadioModule,
-  MatSelectModule
-} from "@angular/material";
+import { MaterialModule } from './material.module';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgContainerComponent } from './ng-container/ng-container.component';
 import { NgContentComponent } from './ng-content/ng-content.component';
@@ -42,6 +29,8 @@ import { OnChangesComponent } from './on-changes/on-changes.component';
 import { NameChangesComponent } from './on-changes/name-changes/name-changes.component';
 import { InterceptingComponent } from './intercepting/intercepting.component';
 import { NameComponent } from './intercepting/name/name.component';
+import { MainLifecycleComponent } from './main-lifecycle/main-lifecycle.component';
+import { LifecycleChildComponent } from './main-lifecycle/lifecycle-child/lifecycle-child.component';
 
 @NgModule({
   declarations: [
@@ -71,24 +60,15 @@ import { NameComponent } from './intercepting/name/name.component';
     NameChangesComponent,
     InterceptingComponent,
     NameComponent,
+    MainLifecycleComponent,
+    LifecycleChildComponent,
 
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
-    MatButtonModule,
-    MatCardModule,
-    MatCheckboxModule,
-    MatDividerModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatIconModule,
-    MatListModule,
-    MatProgressBarModule,
-    MatProgressSpinnerModule,
-    MatRadioModule,
-    MatSelectModule
+    MaterialModule
 
   ],
   providers: [],
