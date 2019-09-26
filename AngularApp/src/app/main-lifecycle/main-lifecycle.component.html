@@ -32,7 +32,7 @@
       <mat-list-item *ngFor="let c of clients">
         <mat-icon mat-list-icon>person</mat-icon>
         <p mat-line>
-          <app-lifecycle-child [age]="c.age" [food]="c.food" [name]="c.name">
+          <app-lifecycle-child [age]="c.age" [food]="c.food" [name]="c.name" #child>
           </app-lifecycle-child>
         </p>
 
@@ -43,6 +43,13 @@
         <button mat-icon-button color="primary">
           <mat-icon>edit</mat-icon>
         </button>
+        <p mat-line>
+          <mat-chip-list>
+            <mat-chip *ngFor="let event of child.events" [color]="event.color" selected>
+              {{ event.name }}
+            </mat-chip>
+          </mat-chip-list>
+        </p>
       </mat-list-item>
     </mat-list>
     <section>
