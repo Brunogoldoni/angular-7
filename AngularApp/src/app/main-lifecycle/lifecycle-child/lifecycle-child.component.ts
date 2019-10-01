@@ -35,6 +35,10 @@ export class LifecycleChildComponent implements OnInit, OnChanges, OnDestroy {
   ngOnChanges(changes: SimpleChanges) {
     console.log(this.name + ' - ngOnChanges');
     this.newEvent('ngOnChanges');
+
+    if (changes.name) {
+      console.log('new name: ' + changes.name.currentValue);
+    }
   }
 
   ngOnDestroy() {
@@ -45,13 +49,13 @@ export class LifecycleChildComponent implements OnInit, OnChanges, OnDestroy {
   newEvent(name: string) {
     const id = this.nextEventId++;
     this.events.push({
-      id = id,
+      id,
       name,
       color: this.colors[id % this.colors.length],
     });
 
     setTimeout(() => {
-      let idx = this.events.findIndex((e) => e.id === id);
+      const idx = this.events.findIndex((e) => e.id === id);
       if (idx >= 0) {
         this.events.splice(idx, 1);
       }
